@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <link>
+        <title>Proyecto con JS</title>
+        <meta charset="utf-8">
+        <!-- estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link id="theme" rel="stylesheet" href="css/green.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Jquery UI-->
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.theme.min.css">
+        <script type="text/javascript" src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+
+        <!-- Plugin validacion -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+        <!-- Mis scripts-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Botonera para cambiar el tema-->
+        <div id="changeTheme">
+            <div id="toGreen"></div>
+            <div id="toRed"></div>
+            <div id="toBlue"></div>
+
+        </div>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    Proyecto JS
+                </div>
+                <div class="clearfix"></div>
+
+            <!-- Barra de navegación-->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            
+            <!-- Contenido-->
+            <section id="content">
+                
+                <div id="box">
+                    <h2>Contacto:</h2>
+                    <form action="#" method="post" id="formContact">
+                        <label for="name">Nombre: </label>
+                        <input type="text" name="name" data-validation="alphanumeric"> <br>
+                        
+                        <label for="surname">Apellido: </label>
+                        <input type="text" name="surname" data-validation="alphanumeric"><br>
+                        
+                        <label for="sex">Sexo: </label>
+                        <select name="sex" data-validation="required">
+                            <option value="men">Hombre</option>
+                            <option value="women">Mujer</option>
+                            <option value="diverse">Diverso</option>
+                        </select><br>
+
+                        <label for="email">Correo electrónico: </label>
+                        <input type="email" name="email" data-validation="email"/><br>
+                        
+                        <label for="birthdate">Fecha de Nacimiento: </label>
+                        <input type="text" name="birthday" data-validation="date" data-validation-format="dd-mm-yyyy"><br>
+                        
+                        <label for="age">Edad: </label>
+                        <input type="number" name="age"  data-validation="number"><br>
+
+                        <input type="submit">
+                    </form>
+                </div>
+
+
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span> Acerca de mí</span></h4>
+                        <img src="img/caracol.jpg" alt="caracol">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempora, quia reprehenderit atque cum sequi libero est commodi nemo quam qui voluptatum labore, saepe, doloremque aspernatur mollitia tempore! Labore, reprehenderit!</p>
+                    </div>
+                    <div id="login">
+                        <h4><span> Acerca de mí</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="name" id="form_email">
+
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="form_password">
+                            
+                            <input type="submit" value="entrar">
+                        </form>
+ 
+                    </div>
+
+                </aside>
+                <div class="clearfix"></div>
+
+            </section>
+        </section>
+        <footer>
+            Proyecto de JavaScript completo
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+        
+    </body>
+</html>

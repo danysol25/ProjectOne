@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link>
+        <title>Proyecto con JS</title>
+        <meta charset="utf-8">
+        <!-- estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link id="theme" rel="stylesheet" href="css/green.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Jquery UI-->
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="../jquery-ui/jquery-ui.theme.min.css">
+        <script type="text/javascript" src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+
+        <!-- Slider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- Plugins Moment JS CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <!-- Mis scripts-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Botonera para cambiar el tema-->
+        <div id="changeTheme">
+            <div id="toGreen"></div>
+            <div id="toRed"></div>
+            <div id="toBlue"></div>
+
+        </div>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    Proyecto JS
+                </div>
+                <div class="clearfix"></div>
+
+            <!-- Barra de navegación-->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Slider-->
+            <div id="slider">
+                <div class="bxslider">
+                    <div><img src="img/hojas.jpg" title="Hojas"></div>
+                    <div><img src="img/rojo.jpg" title="Rojo"></div>
+                    <div><img src="img/cielo.jpg" title="Cielo"></div>
+                  </div>
+
+            </div>
+            <!-- Contenido-->
+            <section id="content">
+                
+                <div id="posts">
+                    <article class="post">
+                        <h2>Título del artículo</h2>
+                        <span class="date">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod nisi eius quas alias dolor amet in laborum! Hic expedita commodi ad et nam incidunt eligendi, fuga quod tempore minima porro!</span>
+                        <a href="#" class="button-more">Leer más</a>
+                    </article>
+                                   
+                    <!-- Carga los post desde json-->
+                </div>
+
+
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span> Acerca de mí</span></h4>
+                        <img src="img/caracol.jpg" alt="caracol">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempora, quia reprehenderit atque cum sequi libero est commodi nemo quam qui voluptatum labore, saepe, doloremque aspernatur mollitia tempore! Labore, reprehenderit!</p>
+                    </div>
+                    <div id="login">
+                        <h4><span> Acerca de mí</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="name" id="form_email">
+
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="form_password">
+                            
+                            <input type="submit" value="entrar">
+                        </form>
+ 
+                    </div>
+
+                </aside>
+                <div class="clearfix"></div>
+
+            </section>
+        </section>
+        <footer>
+            Proyecto de JavaScript completo
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+        
+    </body>
+</html>

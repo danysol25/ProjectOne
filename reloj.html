@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link>
+        <title>Proyecto con JS</title>
+        <meta charset="utf-8">
+        <!-- estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link id="theme" rel="stylesheet" href="css/green.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Plugins Moment JS CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js" integrity="sha512-L6Trpj0Q/FiqDMOD0FQ0dCzE0qYT2TFpxkIpXRSWlyPvaLNkGEMRuXoz6MC5PrtcbXtgDLAAI4VFtPvfYZXEtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+
+        <!-- Mis scripts-->
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Botonera para cambiar el tema-->
+        <div id="changeTheme">
+            <div id="toGreen"></div>
+            <div id="toRed"></div>
+            <div id="toBlue"></div>
+
+        </div>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    Proyecto JS
+                </div>
+                <div class="clearfix"></div>
+
+            <!-- Barra de navegación-->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mí</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            
+            <!-- Contenido-->
+            <!-- Cargar reloj-->
+            <div id="box">
+                <div id="reloj"></div>
+
+            </div>
+            
+
+                <aside id="sidebar">
+                    <div id="about">
+                        <h4><span> Acerca de mí</span></h4>
+                        <img src="img/caracol.jpg" alt="caracol">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae tempora, quia reprehenderit atque cum sequi libero est commodi nemo quam qui voluptatum labore, saepe, doloremque aspernatur mollitia tempore! Labore, reprehenderit!</p>
+                    </div>
+                    <div id="login">
+                        <h4><span> Acerca de mí</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="form_name">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="name" id="form_email">
+
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="form_password">
+                            
+                            <input type="submit" value="entrar">
+                        </form>
+ 
+                    </div>
+
+                </aside>
+                <div class="clearfix"></div>
+
+            </section>
+        </section>
+        <footer>
+            Proyecto de JavaScript completo
+            <a href="#" class="subir">Ir arriba</a>
+        </footer>
+        
+    </body>
+</html>
